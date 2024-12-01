@@ -1,0 +1,11 @@
+#!/bin/sh
+
+ssh root@mum-2.mindwebs.org <<EOF
+echo Logging into production server...
+cd /var/www/rijumukherjee.com
+
+echo Pulling latest code
+git pull origin master
+
+echo Server live at https://rijumukherjee.com/
+EOF
